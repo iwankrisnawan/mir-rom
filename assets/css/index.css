@@ -1,0 +1,179 @@
+
+/* to know what i change in bootstrap.css, use search => rubah */
+
+body{
+  /* background: transparent url("../images/black_white.png") repeat scroll 0% 0%; */
+  background: transparent url("../images/background_gray.jpg") repeat scroll 0% 0%;
+}
+
+.nav-link{
+  color:white;
+  font-size: 18px;
+  font-family: calibri;
+  padding: 15px;
+  margin-right: 10px;
+  cursor:pointer;
+}
+
+.navbar-toggler-icon {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  /* because toggle bootstrap not show */
+}
+
+.check{
+  background:rgba(251, 82, 85, 0.77);
+  font-family: arial;
+  border-right :solid 0.1px rgb(232, 232, 232);
+  border-left :solid 0.1px rgb(232, 232, 232);
+  border-bottom :solid 0.1px rgb(232, 232, 232);
+
+  /* border: 1px white solid; */
+}
+
+.icon-social-nav{
+  padding:7px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 2px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  background:rgba(0, 0, 0, 0.89);
+}
+
+.icon-social-nav:hover{
+  color: rgb(139, 139, 139);
+}
+
+#shape1{
+  background-image: url("../images/notebook.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: -30px;
+}
+
+.circle{
+  border-radius: 50%;
+  margin-top: -40px;
+  height: 70px;
+  width: 80px;
+  display: inline-block;
+  position: relative;
+}
+
+#core-box{
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  /*box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);*/
+  box-shadow: 10px 0 5px -2px rgba(0, 0, 0, 0.5);
+  background-color:rgba(43, 42, 48, 0.41);
+}
+
+#box-shape-1{
+  color:white;
+  padding:3% 2%;
+}
+
+#box-shape-2{
+  background:#2b2a30;
+  padding: 3% 2%;
+  box-shadow: 0px 10px 5px #2b2a30, 0px -30px 70px #2b2a30; /*bottom, top*/
+}
+
+.image-member{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  object-fit:cover;
+}
+
+#box-shape-2 .row .col-md-5{
+    padding:3% 0px;
+  }
+
+
+#box-shape-3{
+  background-color: #c1c1c1;
+  padding: 1% 6% 6%;
+}
+
+.work-shape-child{
+  font-family: arial;
+  font-size:18px;
+  text-align: center;
+  border:solid 1px #2b2a30;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin:0px 5px;
+}
+
+
+.row-image {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-image {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column-image img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#box-shape-4{
+   /*background-color: rgba(43, 42, 48, 0.96); */
+  /*background-color:rgba(0, 0, 0, 0.79);*/
+  background: url('../images/background_gray_black.jpg');
+  background-size: cover;
+}
+
+#contact{
+  padding:0px 6%;
+}
+
+#contact-title{
+  color:#cacaca;
+  font-size: 13px;
+  padding:1% 0px;
+}
+
+.input-contact{
+  border: solid rgba(65, 63, 65, 0.9) 1px;
+  margin:1% 0px;
+  background-color:rgba(65, 63, 65, 0.9);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-image {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  #work-shape{
+    display: none;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-image {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  #box-shape-2 .row .col-md-5{
+    padding:3% 3%;
+  }
+}
